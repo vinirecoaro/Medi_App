@@ -5,7 +5,7 @@ const Schema = mongoose.Schema;
 const patientSchema = new Schema ({
     name: {
         type: String,
-        required: [true, 'Pacient name is required.']
+        required: [true, 'Patient name is required.']
     },
     birthDate: {
         type: Date,
