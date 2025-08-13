@@ -1,4 +1,4 @@
-import { express } from "express"
+import express from "express"
 import appointmentController from "./AppointmentController.js"
 import doctorController from "./DoctorController.js"
 import pacientController from "./PatientController.js"

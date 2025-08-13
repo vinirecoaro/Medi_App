@@ -1,6 +1,7 @@
 {
   "name": "mediapp",
   "version": "1.0.0",
+  "type": "module",
   "description": "mini projeto programacaoII",
   "main": "index.js",
   "scripts": {
@@ -9,6 +10,7 @@
   "author": "Vinicius Recoaro",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "^6.0.0",
     "express": "^5.1.0",
     "mongoose": "^8.17.0"
   }
