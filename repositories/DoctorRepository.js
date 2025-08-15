@@ -1,4 +1,5 @@
 import Doctor from "../models/Doctor.js"
+import { v4 as uuidv4 } from 'uuid'
 
 const getAllDoctors = async () => {
     try{
@@ -18,7 +19,7 @@ const getDoctor = async (id) => {
 
 const saveDoctor = async ({ name, login, password, medicalSpecialty, medicalRegistration, email, phone }) => {
     try{
-        const doctor = new Doctor({ name, login, password, medicalSpecialty, medicalRegistration, email, phone });
+        const doctor = new Doctor({ doctorId: uuidv4(), name, login, password, medicalSpecialty, medicalRegistration, email, phone });
         return await doctor.save();
     }catch(error){
         throw new Error(error);
