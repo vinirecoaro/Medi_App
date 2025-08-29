@@ -1,7 +1,0 @@
-# Dependências
-/node_modules
-
-# Env (variáveis de ambiente, senhas, configs sensíveis)
-.env
-.env.local
-.env.*.local
